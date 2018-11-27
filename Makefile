@@ -11,6 +11,5 @@ prog:
 install: prog
 	avrdude -v -p atmega328p -c arduino -P /dev/ttyACM0 -D -U "flash:w:prog.hex:i"
 
-
 clean:
 	rm *.elf
