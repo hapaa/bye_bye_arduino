@@ -1,7 +1,7 @@
 
 
 .PHONY: all
-all: prog
+all: prog install
 
 prog:
 	avr-gcc -mmcu=atmega328p  main.c -o prog.elf
